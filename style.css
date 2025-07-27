@@ -301,6 +301,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 4.2rem;
 }
 .main-title {
   font-size: 1.2rem;
@@ -326,4 +327,102 @@ body {
 }
 .cards-concept {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3.2rem;
+}
+.card {
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 1rem;
+}
+.head-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+.card .icon {
+  border-radius: 50%;
+  background-color: #00a63e;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.head-card .icon svg {
+  height: 32px;
+  width: 32px;
+}
+.head-card .title-card {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #333;
+}
+.head-card .description-cards {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #555;
+}
+.card .list-items {
+  padding: 0 0 0 2rem;
+  margin-bottom: 3.2rem;
+}
+.card .items {
+  list-style: none;
+}
+.card .item-list {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+.card .item-list svg {
+  width: 18px;
+  height: 18px;
+  stroke: #00a63e;
+}
+.card-etude {
+  border-color: #d0ebff;
+  transition: all 0.4s ease;
+}
+.card-solution {
+  border-color: #ffec99;
+  transition: all 0.4s ease;
+}
+.card-installation {
+  border-color: #b2f2bb;
+  transition: all 0.4s ease;
+}
+.card-etude:hover {
+  border-color: #339af0;
+}
+.card-solution:hover {
+  border-color: #fcc419;
+}
+.card-installation:hover {
+  border-color: #51cf66;
+}
+.card-installation .head-card .icon {
+  background-color: #b2f2bb;
+}
+.card-solution .head-card .icon {
+  background-color: #ffec99;
+}
+.card-etude .head-card .icon {
+  background-color: #d0ebff;
+}
+.card-solution .head-card .icon svg path {
+  stroke: #f59f00;
+}
+.card-installation .head-card .icon svg path,
+.card-installation .head-card .icon svg {
+  stroke: #2f9e44;
+}
+.card-etude .head-card .icon svg path {
+  stroke: #1c7ed6;
 }
