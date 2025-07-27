@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  box-sizing: border-box;
+}
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(to left, #fffbe6 20%, #fff);
+  margin-bottom: 3.2rem;
+}
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+.hero {
+  padding: 3.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: 4.8rem;
+}
+.hero-text-box {
+}
+.hero-tag {
+  background-color: #fff3bf;
+  width: fit-content;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  gap: 1rem;
+  color: #d87e00;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 3.2rem;
+}
+.hero-tag svg {
+  width: 25px;
+  height: 25px;
+  stroke: #d87e00;
+}
+.hero-tag svg path {
+  fill: #d87e00;
+}
+.hero-title {
+  font-size: 7.2rem;
+  max-width: 60rem;
+  line-height: 1.2;
+  color: #333;
+  margin-bottom: 3.2rem;
+  letter-spacing: -4px;
+}
+.hero-title .premier-text {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to right, #f08c00, #ea580c);
+}
+.hero-description {
+  font-size: 1.8rem;
+  max-width: 65rem;
+  line-height: 1.9;
+  color: #555;
+  margin-bottom: 3.2rem;
+}
+.btn {
+  background: none;
+  border: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: inherit;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  color: inherit;
+  margin-bottom: 3.2rem;
+  line-height: 1;
+}
+.btn-primary {
+  background: linear-gradient(to right, #ca8a04, #ea580c);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.4s ease;
+}
+.btn-primary:hover {
+  opacity: 0.8;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.btn-secondary {
+  background-color: transparent;
+  gap: 1rem;
+  color: #333;
+  border: 2px solid #c07000;
+  width: fit-content;
+  display: inline-block;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  color: #c07000;
+  line-height: 1;
+  padding-top: 1rem;
+}
+.btn-secondary svg {
+  width: 20px;
+  height: 20px;
+}
+.btn-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.btn-secondary:hover {
+  background-color: #fff3bf;
+  border: 2px solid #ffe066;
+}
+.hero-rating {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.hero-rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.starts {
+  display: flex;
+  align-items: center;
+}
+.starts svg {
+  width: 25px;
+  height: 25px;
+  stroke: #fff;
+}
+.starts svg path {
+  fill: #d87e00;
+}
+.hero-rating-stars .text {
+  color: #666;
+  font-family: inherit;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+}
+.hero-satisfy-project {
+  display: flex;
+  gap: 1rem;
+  color: #00a63e;
+  font-weight: 500;
+  text-transform: capitalize;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.hero-satisfy-project .icon svg {
+  width: 24px;
+  height: 24px;
+}
+.hero-img-box {
+  width: 100%;
+  position: relative;
+  height: 65rem;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+.container-img {
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* transform: scale(2); */
+}
+.text-top-image {
+  position: absolute;
+  bottom: 0%;
+  right: 20px;
+  background: #fff;
+  padding: 4rem;
+  height: 6rem;
+  transform: translate(40%, 30%);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.text-top-image .icon {
+  background-color: #d3f9d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 50%;
+}
+.text-top-image .icon svg {
+  width: 30px;
+  height: 30px;
+  stroke: #40c057;
+  stroke-width: 0.5px;
+}
+.text-top-image .icon svg path {
+  fill: #40c057;
+}
+.title-box-static-image {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: -5px;
+}
+.price-par-annee {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #00a63e;
+}
+/* Header */
+.header {
+  max-width: 140rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logo-text {
+  font-size: 3.2rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #ea580c, #fcc419, #ea580c);
+}
+.logo .icon {
+  background: linear-gradient(to right, #f08c00, #ea580c);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+.logo .icon svg {
+  width: 30px;
+  height: 30px;
+  stroke: #fff;
+}
+.main-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-transform: uppercase;
+}
+.main-menu .item {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1.5rem;
+  transition: all 0.4s ease;
+}
+.main-menu .item:hover {
+  color: #ccc;
+}
+.header .btn-primary {
+  margin-bottom: 0;
+  margin-right: 0;
+  height: 5rem;
+  line-height: 1;
+  font-size: 1.4rem;
+}
+/* Notre Concept */
+.concept-section {
+  margin-bottom: 3.2rem;
+}
+.titles-concept {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.main-title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  width: fit-content;
+  padding: 0.4rem 2rem;
+  border-radius: 2rem;
+}
+.titles-concept .main-title {
+  color: #a86200;
+  border: 1px solid #f9d199;
+}
+.second-title {
+  font-size: 4.8rem;
+}
+.description-section {
+  font-size: 2rem;
+  color: #665;
+}
+.cards {
+  display: grid;
+}
+.cards-concept {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
