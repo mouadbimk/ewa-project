@@ -295,6 +295,7 @@ body {
 /* Notre Concept */
 .concept-section {
   margin-bottom: 3.2rem;
+  padding: 9.6rem 0 9.6rem 0;
 }
 .titles-concept {
   display: flex;
@@ -305,7 +306,7 @@ body {
 }
 .main-title {
   font-size: 1.2rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 1rem;
   width: fit-content;
   padding: 0.4rem 2rem;
@@ -317,6 +318,7 @@ body {
 }
 .second-title {
   font-size: 4.8rem;
+  text-transform: capitalize;
 }
 .description-section {
   font-size: 2rem;
@@ -425,4 +427,184 @@ body {
 }
 .card-etude .head-card .icon svg path {
   stroke: #1c7ed6;
+}
+/* Prouquoi section */
+.proquoi-box {
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+  margin-top: 3.2rem;
+  padding: 4.8rem;
+  background: linear-gradient(to right, #fff9db, #ffe);
+  align-items: center;
+  border-radius: 2rem;
+}
+.proquoi-box .second-title {
+  font-size: 2.4rem;
+}
+.proquoi-box .box-img {
+  border-radius: 3rem;
+  width: 100%;
+  height: 32rem;
+  overflow: hidden;
+}
+.proquoi-box .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pourquoi-icon-box {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 3.2rem;
+  gap: 3rem;
+}
+.pourquoi-icon-box .box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.pourquoi-icon-box .box .icon {
+  background-color: #00a63e;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.pourquoi-icon-box .box .icon svg {
+  width: 25px;
+  height: 25px;
+}
+.pourquoi-icon-box .box .icon.dollar {
+  background-color: #d3f9d8;
+}
+.pourquoi-icon-box .box .icon.dollar svg path {
+  fill: #37b24d;
+}
+.pourquoi-icon-box .box .icon.leaf {
+  background-color: #d0ebff;
+}
+.pourquoi-icon-box .box .icon.trend {
+  background-color: #e5dbff;
+}
+.pourquoi-icon-box .box .icon.shield {
+  background-color: #fff3bf;
+}
+.pourquoi-icon-box .box .icon.shield svg path {
+  stroke: #f59f00;
+}
+.pourquoi-icon-box .box .icon.trend svg path {
+  fill: #7048e8;
+}
+
+.pourquoi-icon-box .box .icon.leaf svg path {
+  fill: #1c7ed6;
+}
+.pourquoi-icon-box .box .content-box h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.pourquoi-icon-box .box .content-box p {
+  font-size: 1.4rem;
+  color: #555;
+  font-weight: 400;
+}
+/* nos services */
+.services-section {
+  background-color: #f8f9fa;
+  padding: 9.6rem 0 9.6rem 0;
+}
+
+.services-section .main-title {
+  border-color: #1c7ed6;
+  color: #1c7ed6;
+}
+.box-buttons-tab {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 0.5rem;
+  background-color: #f1f3f5;
+  border-radius: 0.7rem;
+  margin-bottom: 3.2rem;
+}
+.box-buttons-tab .btn-tab {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  font-family: inherit;
+  line-height: 1;
+  text-transform: capitalize;
+  cursor: pointer;
+  padding: 1.3rem;
+  transition: all 0.5s;
+}
+.box-buttons-tab .btn-tab.active {
+  background-color: #fff;
+  border-radius: 0.7rem;
+}
+.cards-tab {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+.card-tab {
+  border: 1px solid #ced4da;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.4s ease;
+}
+.card-tab .head-card {
+  align-items: start;
+  margin-bottom: 1rem;
+}
+.card-tab .head-card .icon svg {
+  height: 40px;
+  width: 40px;
+}
+.card-tab .head-card .lighting svg path {
+  fill: #f08c00;
+}
+.card-tab .head-card .battery svg g {
+  stroke: #40c057;
+}
+.card-tab .head-card .setting svg path {
+  fill: #2f9e44;
+}
+.card-tab .head-card .building svg g {
+  fill: #1971c2;
+}
+.card-tab .head-card .home svg path {
+  stroke: #1971c2;
+}
+.card-img {
+  height: 20rem;
+  width: 100%;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-tab .list-items {
+  margin-left: 2rem;
+}
+.card-tab .list-items .items .item-list {
+  margin-bottom: 0.3rem;
+}
+.tab {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+  height: 0;
+}
+.tab-active {
+  visibility: visible;
+  opacity: 1;
+  height: fit-content;
+  /* overflow: hidden; */
+}
+
+.card-tab:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
