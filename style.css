@@ -665,11 +665,19 @@ body {
   background-color: #ffd8a8;
 }
 .box-contact .info-title {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
+.box-contact .icon {
+  width: 45px;
+  height: 45px;
+}
+.box-contact .icon svg {
+  width: 35px;
+  height: 35px;
+}
 .box-contact .info-appel {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: #333;
 }
 .box-contact .desc-contact {
