@@ -4,13 +4,13 @@ const tab_services = function () {
 
   if (!btnsContainer || !tabs) return;
   btnsContainer.addEventListener("click", (e) => {
-    const btn = e.target.closest("button.btn-tab");
-    if (!btn) return;
+    const btnClick = e.target.closest("button.btn-tab");
+    if (!btnClick) return;
     document.querySelectorAll(".btn-tab").forEach((btn) => {
       btn.classList.remove("active");
+      btnClick.classList.add("active");
     });
-    btn.classList.add("active");
-    const tabActive = +btn.dataset.tab;
+    const tabActive = +btnClick.dataset.tab;
     tabs.forEach((tab) => {
       tab.classList.remove("tab-active");
       document.querySelector(`.tab-${tabActive}`).classList.add("tab-active");
